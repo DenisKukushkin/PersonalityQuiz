@@ -44,7 +44,7 @@ class ResultViewController: UIViewController {
     }
     
     
-    private func resut(for answers: [Answer]) {
+    private func result(for answers: [Answer]) {
         
         for answer in answers {
             
@@ -73,7 +73,7 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        resut(for: answersChosen)
+        result(for: answersChosen)
         youAreAnimalTitle.text = "Вы - \(String(youAreAnimal.rawValue))"
         youAreAnimalDefinition.text = String(youAreAnimal.definition)
         navigationItem.hidesBackButton = true
